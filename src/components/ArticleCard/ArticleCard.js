@@ -9,7 +9,6 @@ const ArticleCard = ({ link, title, pulishDate, updateDate, section }) => {
             <div><strong>Published Date : </strong> <span>{updateDate}</span></div>
             <div><strong>Section : </strong> <span>{section}</span></div>
             <strong> Visit Article :</strong> <a style={{ textDecoration: 'none' }} href={link} target='_blank' >{link}</a>
-
         </div>
     )
 }

@@ -13,7 +13,7 @@ function App() {
       <div>
         <Header />
       </div>
-      <div>
+      <div className='articleContainer'>
         {
           data.results && data.results.map((res) => (
             <ArticleCard

@@ -34,24 +34,35 @@
   margin: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 5px;
 }
 .articleTitle {
   text-align: center;
   align-items: center;
 }
+.articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 110px;
+  height: 600px;
+  overflow: auto;
+}
 .headerStyle { 
   padding-left: 10px;
   background-color: #005073;
   color: white;
-  height: 60px;
+  height: 52px;
   margin-top: 0;
-  padding-top: 15px;
+  padding-top: 5px;
+}
+h2 {
+  margin-block-start: 0;
 }
 .footerStyle {
   padding-left: 10px;
   background-color: #005073;
   color: white;
-  height: 60px;
+  height: 58px;
   margin-top: 0;
   padding-top: 4px;
   
