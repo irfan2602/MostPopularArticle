@@ -18,6 +18,9 @@ function App() {
           data.results && data.results.map((res) => (
             <ArticleCard
               link={res.url}
+              heading={res.title}
+              summary={res.abstract}
+              writer={res.byline}
               title={res.source}
               pulishDate={res.published_date}
               updateDate={res.updated}
