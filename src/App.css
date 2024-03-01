@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   margin-left: 110px;
   height: 600px;
-  overflow: auto;
+  overflow: auto; 
 }
 .headerStyle { 
   padding-left: 10px;
