@@ -6,8 +6,11 @@ import Footer from './components/Footer/Footer';
 import React, { Suspense } from 'react';
 const ArticleCard = React.lazy(() => import('./components/ArticleCard/ArticleCard'))
 
+localStorage.setItem('apiKey','hlmCaNoX5Nl8DD0HtY27CURxbn8jsfBP')
+const apiKey = localStorage.getItem('apiKey')
 function App() {
-  const [data] = useFetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=hlmCaNoX5Nl8DD0HtY27CURxbn8jsfBP')
+  const [data] = useFetch(`https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${apiKey}`)
+  
   console.log(data)
   return (
     <div >
